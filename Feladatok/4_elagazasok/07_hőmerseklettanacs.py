@@ -14,7 +14,9 @@ Kérj be egy hőmérsékletet Celsiusban, és adj tanácsot:
 
 """
 homerseklet = float(input("Add meg a hőmérsékletet Celsiusban: "))
-if homerseklet <= 20:
+if homerseklet < 0:
+    print("Nagyon hideg, öltözz melegen!")
+elif homerseklet <= 20:
     print("Hűvös, kabát ajánlott.")
 elif homerseklet <= 30:
     print("Kellemes idő.")
